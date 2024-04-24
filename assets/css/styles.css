@@ -202,6 +202,35 @@ header .overlay {
 	min-height: 350px;
 }
 
+.recent-work .card-header {
+	min-height: 200px;
+}
+.recent-work .card-content {
+	background: #fff;
+	padding: 30px;
+}
+.recent-work .card-title {
+	height: 20px;
+	margin: 0;
+}
+
+.invitation-showcase {
+	min-height: 200px;
+}
+.invitation-showcase .overlay,
+.newsletter .overlay {
+	background: var(--black-rgba-8);
+}
+
+.how-we-works figure {
+	width: 70px;
+	height: 70px;
+}
+
+footer {
+	height: auto;
+	min-height: 300px;
+}
 
 
 
@@ -212,6 +241,11 @@ header .overlay {
 
 
 
+
+
+.external-link-section {
+	height: 400px;
+}
 
 /* Chatbot */
 .chatbot-toggler {
