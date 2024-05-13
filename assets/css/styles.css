@@ -70,18 +70,24 @@ input {
 	z-index: 999 !important;
 }
 /* Start - thin scrollbar */
-/* thin scrollbar for Chrome and other browsers */
-.thin-scrollbar::-webkit-scrollbar {
+/* customized scrollbar for Chrome and other browsers */
+.scrollbar-none::-webkit-scrollbar {
+	width: 0 !important;
+}
+.scrollbar-thin::-webkit-scrollbar {
 	width: 2vh !important;
 }
-.thin-scrollbar::-webkit-scrollbar-thumb {
+.scrollbar-thin::-webkit-scrollbar-thumb {
 	background-color: #ccc;
 }
-.thin-scrollbar::-webkit-scrollbar-track {
+.scrollbar-thin::-webkit-scrollbar-track {
 	background-color: #eee;
 }
-/* thin scrollbar for Firefox browser */
-.thin-scrollbar {
+/* customized scrollbar for Firefox browser */
+.scrollbar-none {
+	scrollbar-width: none !important;
+}
+.scrollbar-thin {
 	scrollbar-width: thin;
 	scrollbar-color: #ccc #eee;
 }
@@ -112,6 +118,8 @@ input {
 	background: var(--secondary-color) !important;
 	border-color: var(--secondary-color) !important;
 }
+
+
 /* loader */
 #loader {
 	background: var(--white) !important;
@@ -131,6 +139,7 @@ input {
 #loader h6 {
 	color: var(--primary-color);
 }
+
 /* Nav */
 .navbar.bg-dark {
 	background: var(--black-rgba-8) !important;
@@ -196,14 +205,23 @@ header {
 	padding-top: 6rem;
 }
 header .overlay {
-	background: var(--black-rgba-8);
+	background: var(--black-rgba-8) !important;
 }
 .why-us .contents {
 	min-height: 350px;
 }
 
-.recent-work .card-header {
+.recent-work .card-header,
+.pricing .card-header {
 	min-height: 200px;
+}
+.recent-work .card-header figure,
+.recent-work .card-header img,
+.pricing .card-header figure,
+.pricing .card-header img {
+	height: 100%;
+	width: 100%;
+
 }
 .recent-work .card-content {
 	background: #fff;
@@ -226,10 +244,26 @@ header .overlay {
 	width: 70px;
 	height: 70px;
 }
+.pricing .header {
+	background: url('../images/subscribe.jp') no-repeat center center/cover;
+	position: relative;
+}
+.pricing .header .overlay {
+	background: var(--black-rgba-8) !important;
+	border-radius: inherit;
+}
 
-footer {
+
+
+
+footer.main-footer {
 	height: auto;
 	min-height: 300px;
+}
+footer.main-footer textarea {
+	resize: none;
+	font-size: 17px;
+	max-height: 75px !important;
 }
 
 
