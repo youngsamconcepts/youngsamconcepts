@@ -62,7 +62,7 @@ function backToTop() {
 	});
 }
 
-
+// Open external links
 function openExternalLinks(linkElements) {
 	const externalLinks = document.querySelectorAll('#external-link');
 	const externalLinksFrame = document.querySelector('#external-link-frame iframe');

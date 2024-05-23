@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="keywords" content="Web Designer, Web Developer, Web Design & Development Agency in Suleja, Mobile Phone Engineer" />
+		<meta name="keywords" content="Front-end developer, Front-end designer, Web Designer, Web Developer, Web Design & Development Agency in Suleja" />
 		<meta name="description" content="Young Sam Concepts official website">
 		<meta name="author" content="Young Sam Concepts"> 
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -13,32 +13,38 @@
 		<meta name="msapplication-TileImage" content="assets/img/favicon.png" width="20" height="20" />
 		<meta name="msapplication-TileColor" content="#0093dd" />
 		<meta name="theme-color" content="#0093dd" />
-
 		<link rel="tab icon" type="image/ico" href="assets/img/favicon.png" width="20" height="20" />
 		<link href='http://fonts.googleapis.com/css?family=Poppins:400,300,700,800' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,800' rel='stylesheet' type='text/css' />
 		<link rel="stylesheet" href="assets/css/bootstrap.css" />
 		<link rel="stylesheet" href="assets/css/font-awesome.css" />
 		<link rel="stylesheet" href="assets/css/styles.css" />
-
-		<title>Young Sam Concepts - Web Design/Development Agency</title>
+		<link rel="stylesheet" href="assets/lib/animate/animate.min.css" />
+		<title>Young Sam Concepts - Web Development Agency</title>
 	</head>
 	<body>
 		<!-- Start - loader -->
 		<div id="loader" class="overflow-hidden align-middle position-fixed top-0 w-100 h-100">
 			<div class="loader-container position-relative d-flex align-items-center justify-content-center flex-column vw-100 vh-100">
 				<figure class="figure d-block">
-					<img src="assets/images/ysc-logo-transparent.png" class="figure-img w-100 h-100 fas fa-beat-fade" />
+					<img src="assets/images/ysc-logo-transparent.png" class="figure-img w-100 h-100" />
 				</figure>
-				<h6 class="figure-caption d-block fs-6 fw-bold" translate="no">Young Sam Concepts</h6>
+				<div class="loader-dot d-flex align-items-center justify-content-center text-center">
+					<span class="bg-dark-subtle rounded-circle me-1"></span>
+					<span class="bg-dark-subtle rounded-circle me-1"></span>
+					<span class="bg-dark-subtle rounded-circle me-1"></span>
+					<span class="bg-dark-subtle rounded-circle me-1"></span>
+					<span class="bg-dark-subtle rounded-circle"></span>
+				</div>
 			</div>
 		</div>
 		<!-- End - loader -->
 		<!-- NAV -->
 		<nav class="navbar navbar-nav navbar-expand-lg fixed-top shadow">
-	      <div class="container">
-	        <a href="index.html" class="navbar-brand text-primary d-flex align-items-center justify-content-start">
-	        	<div class="logo-img animated fadeInLeft" data-wow-delay="0s"></div>
-	        	<h4 id="typing-text" class="mb-0" translate="no"></h4>
+	     <div class="container">
+	       <a href="index.html" class="navbar-brand text-primary d-flex align-items-center justify-content-start">
+	        	<div class="logo-img animated fadeIn"></div>
+	        	<h4 id="typing-text" class="mb-0 animated fadeIn" translate="no"></h4>
 	        </a>
 	        <button
 	          class="navbar-toggler"
@@ -54,83 +60,78 @@
 	        </button>
 	        <div class="collapse navbar-collapse" id="navbarNavDropdown">
 	          <ul class="navbar-nav ms-auto">
-	            <li class="nav-item active animated fadeInRight">
+	            <li class="nav-item active animated fadeIn">
 	              <a class="nav-link" aria-current="page" href="index.html">Home</a>
 	            </li>
-	            <li class="nav-item animated fadeInRight">
-	              <a class="nav-link" href="page-about.html">About Us</a>
+	            <li class="nav-item animated fadeIn" data-wow-delay="1s">
+	              <a class="nav-link" href="pages/page-about.html">About Us</a>
 	            </li>
-	            <li class="nav-item animated fadeInRight">
-	              <a class="nav-link" href="page-services.html">Services</a>
+	            <li class="nav-item animated fadeIn" data-wow-delay="2s">
+	              <a class="nav-link" href="pages/page-services.html">Services</a>
 	            </li>
-
-	            <li class="nav-item dropdown animated fadeInRight">
+	            <li class="nav-item dropdown animated fadeIn" data-wow-delay="3s">
 								<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
 								<!-- Start - Brands dropdown-->
 								<div class="dropdown-menu p-3">
 									<div class="row">
 										<ul class="list-unstyled col-md-6">
-											<li class="nav-item animated fadeInRight">
-											  <a class="nav-link" href="page-portfolios.html">Portfolios</a>
+											<li class="nav-item animated fadeIn">
+											  <a class="nav-link" href="pages/page-portfolios.html">Portfolios</a>
 											</li>
-											<li class="nav-item animated fadeInRight">
-											  <a class="nav-link" href="page-templates.html">Templates</a>
+											<li class="nav-item animated fadeIn">
+											  <a class="nav-link" href="pages/page-templates.html">Templates</a>
 											</li>
 										</ul>
 										<ul class="list-unstyled col-md-6">
-											<li class="nav-item animated fadeInRight">
-											  <a class="nav-link" href="page-pricing.html">Pricing</a>
+											<li class="nav-item animated fadeIn">
+											  <a class="nav-link" href="pages/page-pricing.html">Pricing</a>
 											</li>
-											<li class="nav-item animated fadeInRight">
-											  <a class="nav-link" href="page-faq.html">FAQs</a>
+											<li class="nav-item animated fadeIn">
+											  <a href="https://wa.me/09072779389" id="external-link" class="nav-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">Developer</a>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</li>
-			        <li class="nav-item animated fadeInRight">
+			        <li class="nav-item animated fadeIn" data-wow-delay="4s">
 			          <a class="nav-link" href="page-contact.html">Contact Us</a>
-			        </li>
-		       		<span class="nav-item animated fadeInRight">
-								<span class="fa-stack">
-								  <a href="#">
-								    <i class="fas fa-circle fa-stack-2x"></i>
-								    <i class="fas fa-search fa-stack-1x text-white"></i>
-								  </a>
-								</span>
-							</span>
+			        </li>		       		
 		      	</ul>
-	          <span class="nav-item animated fadeInRight">
+	          <span class="nav-item animated fadeIn">
 	            <span class="fa-stack">
-	              <a href="#https://www.facebook.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
+	              <a href="https://www.linkedin.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
+	                <i class="fas fa-circle fa-stack-2x"></i>
+	                <i class="fab fa-linkedin fa-stack-1x text-white"></i>
+	              </a>
+	            </span>
+	          </span>
+	          <span class="nav-item animated fadeIn">
+	            <span class="fa-stack">
+	              <a href="https://www.facebook.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
 	                <i class="fas fa-circle fa-stack-2x"></i>
 	                <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
 	              </a>
 	            </span>
 	          </span>
-
-	          <span class="nav-item animated fadeInRight">
+	          <span class="nav-item animated fadeIn">
 	            <span class="fa-stack">
-	              <a href="#https://www.instagram.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
+	              <a href="https://www.instagram.com/youngsamconcepts" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
 	                <i class="fas fa-circle fa-stack-2x"></i>
 	                <i class="fab fa-instagram fa-stack-1x text-white"></i>
 	              </a>
 	            </span>
 	          </span>
-
-	          <span class="nav-item animated fadeInRight" data-wow-delay="0.9s">
+	          <span class="nav-item animated fadeIn" data-wow-delay="0.9s">
             <span class="fa-stack">
-              <a href="#https://www.twitter.com/YSCs" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
+              <a href="https://www.twitter.com/YSCs" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-twitter fa-stack-1x text-white"></i>
               </a>
             </span>
           </span>
-
         </div>
       </div>
     </nav>
-
     <!-- HEADER -->
 		<header class="position-relative pb-3">
 			<figure class="figure w-100 h-100 position-absolute top-0 start-0 z-n1">
@@ -140,19 +141,19 @@
 			<div class="container">
 				<div class="showcase pt-5 pb-3 d-md-flex align-items-center justify-content-center">
 					<div class="text-light animated fadeIn">
-						<h2 class="rotate py-4">Web Design, Web Development, WEBSITE HOSTING, WEBSITE MAINTAINANCE, UI &amp; UX SPECIALIST, CONTENT CREATION, FREELANCING</h2>
-						<p class="opacity-75">Welcome to <span translate="no">Young Sam Concepts</span> where we build innovative, responsive and engaging web projects and cutting-edge web solutions with a solid foundation & passion in coding. Explore our portfolios, get in touch now and "Let's Build Your Dreams Together" through an online  presence! <br /> Enjoy the benefits of working with us.</p>
+						<h2 class="rotate py-4">Web Development, Web Design, WEBSITE HOSTING, WEBSITE MAINTAINANCE, UI  SPECIALIST, FREELANCING</h2>
+						<p class="opacity-75 pe-3">Welcome to <span translate="no">Young Sam Concepts</span> where we build innovative, responsive and engaging web projects and cutting-edge web solutions with a solid foundation & passion in coding. Explore our portfolios, get in touch now and "Let's Build Your Dreams Together" through an online  presence! Enjoy the benefits of working with us.</p>
 					</div>
 					<figure class="figure d-none d-md-block rounded-circle shadow animated fadeIn">
 						<img src="assets/images/code.jpg" class="figure-img mb-0 w-100 h-100 rounded-circle" />
 					</figure>
 				</div>
-				<div class="">
-					<div class="d-md-flex align-items-center justify-content-start my-4">
-						<a href="#" class="btn btn-primary btn-lg m-2 my-1">Contact Now <i class="fas fa-arrow-right ms-2"></i></a>
-						<a href="#" class="btn btn-dark btn-lg m-2 my-1">LEARN MORE <i class="fas fa-arrow-right ms-2"></i></a>
+				<div class="my-4">
+					<div class="d-md-flex align-items-center justify-content-start">
+						<a href="pages/page-contact.html" class="btn btn-primary btn-lg m-2 my-1">Contact Now <i class="fas fa-arrow-right ms-2"></i></a>
+						<a href="pages/page-about.html" class="btn btn-dark btn-lg m-2 my-1">LEARN MORE <i class="fas fa-arrow-right ms-2"></i></a>
 					</div>
-
+				</div>
 			</div>
 		</header>
 		<!-- MAIN -->
@@ -161,73 +162,55 @@
 			<section class="services py-5 position-relative">
 				<div class="container">
 					<div class="row text-center mb-5">
-					  <div class="col-md-8 offset-md-2">
+					  <div class="col-md-8 offset-md-2 animated fadeIn">
 					    <h2>What We Offer</h2>
 					    <p class="lead opacity-75">
-					      Here are the services we offers to our customers.
+					      Here are the services we offer to our customers.
 					    </p>
 					  </div>
 					</div>
 					<div class="row">
-						<div class="col-12 col-md-4 text-center">
+						<div class="col-12 col-md-4 text-center animated fadeIn">
 							<i class="fas fa-laptop-code text-white fs-1 my-3 p-4 bg-danger rounded-circle"></i>
 							<h3>Web Developments</h3>
 							<p class="opacity-75">We provides a wide range of best SEO friendly web projects with responsive and amazing layouts. We design with the latest tools and technologies.</p>
 						</div>
-						<div class="col-12 col-md-4 text-center">
+						<div class="col-12 col-md-4 text-center animated fadeIn">
 						  <i class="fas fa-gears text-white fs-1 my-3 p-4 bg-danger rounded-circle"></i>
 							<h3>Web Maintainance</h3>
 							<p class="opacity-75">We ensure all the appropriate activities needed for the operational intergrity of your website. We ensure your site run smoothly and according to plan.</p>
 						</div>
-						<div class="col-12 col-md-4 text-center">
+						<div class="col-12 col-md-4 text-center animated fadeIn">
 						  <i class="fas fa-laptop-code text-white fs-1 my-3 p-4 bg-danger rounded-circle"></i>
 							<h3>Web Hosting</h3>
-							<p class="opacity-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+							<p class="opacity-75">Get fast, secure and reliable web hosting for your website. Take your business to it's next level with our web hosting solutions.</p>
 						</div>
 					</div>
 				</div>
 			</section>
-
 			<!-- WHY-US -->
 			<section class="why-us py-5 position-relative">
 				<div class="container">
 					<div class="row text-center mb-5">
-					  <div class="col-md-8 offset-md-2">
+					  <div class="col-md-8 offset-md-2 animated fadeIn">
 					    <h2>Why Choose Us</h2>
 					    <p class="lead opacity-75">
-					      Here are the best of our services!
+					      Here are the best reasons why you should try us!
 					    </p>
 					  </div>
 					</div>
 					<div class="contents row overflow-hidden">
 						<div class="col-12 col-md-6 my-2">
-							<div class="wow animated fadeInLeft" data-wow-delay="0.8s">
-								<div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-								    <div class="carousel-inner">
-								        <div class="carousel-item active pb-0">
-											<figure class="figure w-100 h-100 rounded-3">
-												<img src="assets/images/build-your-dream.jpg" alt="" class="figure-img mb-0 mw-100 mh-100 rounded-3" />
-											</figure>
-								        </div>
-								        <div class="carousel-item pb-0">
-											<figure class="figure w-100 h-100 rounded-3">
-												<img src="assets/images/agency-ysc.png" alt="" class="figure-img mb-0 w-100 h-100 rounded-3" />
-											</figure>
-								        </div>
-								        <div class="carousel-item pb-0">
-											<figure class="figure w-100 h-100 rounded-3">
-												<img src="assets/images/code.jpg" alt="" class="figure-img mb-0 w-100 h-100 rounded-3" />
-											</figure>
-								        </div>
-								    </div>
-								</div>
+							<div class="animated fadeIn">								
+								<figure class="figure w-100 h-100 rounded-3">
+									<img src="assets/images/build-your-dream.jpg" alt="" class="figure-img mb-0 mw-100 mh-100 rounded-3" />
+								</figure>
 							</div>
 						</div>
-						<div class="col-12 col-md-6 my-2">
-							<div class="wow animated fadeInRight" data-wow-delay="0.8s">
+						<div class="col-12 col-md-6 my-2 animated fadeIn">
+							<p class="lead">
 								We build and design SEO friendly and responsive website with latest tools and technologies tailored to your business's needs and requirements. We provide your users with the relevant information about your business. 
-							</div>
+							</p>
 							<div class="">
 								<ul class="list-unstyled">
 									<li class="d-flex align-items-center justify-content-start my-3">
@@ -256,7 +239,6 @@
 					</div>
 				</div>
 			</section>
-
 			<!-- Recent Works -->
 			<section class="recent-work py-5 position-relative">
 				<div class="container">
@@ -371,12 +353,10 @@
 						</div>
 					</div>
 					<div class="text-center w-100">
-						<a href="#" class="btn btn-primary btn-lg my-4">View More Works <i class="fas fa-arrow-right ms-2"></i></a>
+						<a href="pages/page-templates.html" class="btn btn-primary btn-lg my-4">View More Works <i class="fas fa-arrow-right ms-2"></i></a>
 					</div>
 				</div>
 			</section>
-
-
 			<!-- invitation-showcase -->
 			<section class="invitation-showcase py-5 border position-relative text-light">
 				<figure class="figure w-100 h-100 position-absolute top-0 start-0 z-n1">
@@ -385,25 +365,20 @@
 				<div class="overlay w-100 h-100 position-absolute top-0 start-0 z-n1"></div>
 				<div class="container">
 					<div class="d-flex flex-column align-items-center justify-content-center text-center">
-						<h1 class="text-center">Own A Website That Converts</h1>
-						<h1 class="text-center">Change Your Business Look With Us</h1>
-						<h1>Lets Build Your Dreams Together!</h1>
+						<h1 class="text-center">Own A Website That Converts <br />
+						Change Your Business Look With Us<br />
+						Lets Build Your Dreams Together!</h1>
+						<a href="" class="btn btn-primary btn-lg my-4">Contact Now</a>
 					</div>
 				</div>
 			</section>
-
-
-
-
 			<!-- how-we-works -->
 			<section class="how-we-works py-5 position-relative">
 				<div class="container">
 					<div class="row text-center mb-5">
 					  <div class="col-md-8 offset-md-2">
 					    <h2>Understanding Our Customers</h2>
-					    <p class="lead opacity-75">
-					      Here are the services we offers to our customers.
-					    </p>
+					    <p class="lead opacity-75">Here are the services we offers to our customers.</p>
 					  </div>
 					</div>
 					<div class="row">
@@ -431,8 +406,6 @@
 					</div>
 				</div>
 			</section>
-
-
 			<!-- Pricing -->
 			<section class="pricing py-5 position-relative">
 				<div class="container">
@@ -440,33 +413,28 @@
 					  <div class="col-md-8 offset-md-2">
 					    <h2>Our Pricing Plans</h2>
 					    <p class="lead opacity-75">
-					      The best affordable pricing plan that fits for you
+					      The best affordable pricing plan that is fit for you
 					    </p>
 					  </div>
 					</div>
 					<!-- First Row -->
-					<div class="row mb-4">
+					<div class="row">
 						<div class="col-12 col-md-4 my-4 position-relative overflow-hidden">
 							<div class="shadow rounded-3 bg-dark text-light pb-3">
-
-									<div class="header position-relative rounded-top-3 pt-5 px-3 pb-2">
-										<figure class="figure w-100 h-100 position-absolute top-0 start-0 z-0">
-											<img src="assets/images/web_dev.jpg" alt="" class="figure-img mb-0 w-100 h-100" />
+									<div class="header position-relative rounded-top-3 pt-5 px-3">
+										<figure class="figure w-100 h-100 position-absolute top-0 start-0 rounded-top-3">
+											<img src="assets/images/web_dev.jpg" alt="" class="figure-img mb-0 w-100 h-100 rounded-top-3" />
 										</figure>
-										<div class="overlay w-100 h-100 position-absolute top-0 start-0 z-2"></div>
-
-										<div class="text-light z-3">
+										<div class="overlay w-100 h-100 position-absolute top-0 start-0"></div>
+										<div class="text-light z-3 position-absolute top-0 pt-5" style="z-index: 1000 !important">
 											<h3 class="">STARTER</h3>
 											<p class="">Starts at <i class="fas fa-naira-sign"></i>100,000. Training Guide</p>
 										</div>
-
 									</div>
-
 									<div class="contents p-3">
 										<h1><i class="fas fa-naira-sign"></i>100,000</h1>
-										<p class="text-danger fw-bold">A Full Website Upto 5 Pages</p>
-
-										<ul class="list-unstyled my-5">
+										<p class="text-danger fw-bold fs-6">A Full Website Upto 5 Pages</p>
+										<ul class="list-unstyled pt-3 fs-6">
 											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 1 Year .com.ng</li>
 											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Custom Emails</li>
 											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 24/7 hours Premium Support</li>
@@ -475,148 +443,99 @@
 											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Live Chat</li>
 										</ul>
 									</div>
-
+								</div>
 							</div>
-						</div>
-
-
-						<div class="col-12 col-md-4 my-4">
-							<a href="" id="external-link" class="card rounded-3 border-0 shadow" data-bs-toggle="modal" data-bs-target="#external-link-frame">
-								<header class="card-header p-0">
-									<figure class="figure w-100 h-100 rounded-top-3">
-										<img src="assets/images/ports/port-2.png" alt="" class="figure-img mb-0 w-100 h-100 rounded-top-3" />
-									</figure>
-								</header>
-								<div class="card-content p-3 rounded-bottom-3">
-									<h4 class="card-title animated-bg animated-bg-text mt-3 mb-2">Portfolio Website</h4>
-									<p class="card-excerpt py-3 mb-0 opacity-75">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									</p>								
+							<div class="col-12 col-md-4 my-4 position-relative overflow-hidden">
+							<div class="shadow rounded-3 bg-dark text-light pb-3">
+									<div class="header position-relative rounded-top-3 pt-5 px-3">
+										<figure class="figure w-100 h-100 position-absolute top-0 start-0 rounded-top-3">
+											<img src="assets/images/web_dev.jpg" alt="" class="figure-img mb-0 w-100 h-100 rounded-top-3" />
+										</figure>
+										<div class="overlay w-100 h-100 position-absolute top-0 start-0"></div>
+										<div class="text-light z-3 position-absolute top-0 pt-5" style="z-index: 1000 !important">
+											<h3 class="">STANDARD</h3>
+											<p class="">Starts at <i class="fas fa-naira-sign"></i>250,000. Training Guide</p>
+										</div>
+									</div>
+									<div class="contents p-3">
+										<h1><i class="fas fa-naira-sign"></i>250,000</h1>
+										<p class="text-danger fw-bold fs-6">A Full Website Pages + Additional Features</p>
+										<ul class="list-unstyled pt-3 fs-6">
+											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 1 Year .com</li>
+											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Custom Emails</li>
+											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 24/7 hours Premium Support</li>
+											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Social Media Integration</li>
+											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Logo</li>
+											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Live Chat</li>
+										</ul>
+									</div>
 								</div>
-							</a>
-						</div>
-						<div class="col-12 col-md-4 my-4">
-							<a href="" id="external-link" class="card rounded-3 border-0 shadow" data-bs-toggle="modal" data-bs-target="#external-link-frame">
-								<header class="card-header p-0">
-									<figure class="figure w-100 h-100 rounded-top-3">
-										<img src="assets/images/ports/port-3.png" alt="" class="figure-img mb-0 w-100 h-100 rounded-top-3" />
-									</figure>
-								</header>
-								<div class="card-content p-3 rounded-bottom-3">
-									<h4 class="card-title animated-bg animated-bg-text mt-3 mb-2">eWallet Website</h4>
-									<p class="card-excerpt py-3 mb-0 opacity-75">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									</p>								
+							</div>
+							<div class="col-12 col-md-4 my-4 position-relative overflow-hidden">
+							<div class="shadow rounded-3 bg-dark text-light pb-3">
+									<div class="header position-relative rounded-top-3 pt-5 px-3">
+										<figure class="figure w-100 h-100 position-absolute top-0 start-0 rounded-top-3">
+											<img src="assets/images/web_dev.jpg" alt="" class="figure-img mb-0 w-100 h-100 rounded-top-3" />
+										</figure>
+										<div class="overlay w-100 h-100 position-absolute top-0 start-0"></div>
+										<div class="text-light z-3 position-absolute top-0 pt-5" style="z-index: 1000 !important">
+											<h3 class="">PREMIUM</h3>
+											<p class="">Starts at <i class="fas fa-naira-sign"></i>350,000. Training Guide</p>
+										</div>
+									</div>
+									<div class="contents p-3">
+										<h1><i class="fas fa-naira-sign"></i>350,000</h1>
+										<p class="text-danger fw-bold fs-6">A Full Website With Unlimited Pages</p>
+										<ul class="list-unstyled pt-3 fs-6">
+											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 1 Year .com</li>
+											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Custom Emails</li>
+											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 24/7 hours Premium Support</li>
+											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Social Media Integration</li>
+											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Logo</li>
+											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Live Chat</li>
+										</ul>
+									</div>
 								</div>
-							</a>
-						</div>
-					</div>
-
-				</div>
-			</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<!-- newsletter -->
-			<section class="newsletter py-5 border position-relative text-light">
-				<figure class="figure w-100 h-100 position-absolute top-0 start-0 z-n1">
-					<img src="assets/images/code.jpg" alt="" class="figure-img mb-0 w-100 h-100" />
-				</figure>
-				<div class="overlay w-100 h-100 position-absolute top-0 start-0 z-n1"></div>
-				<div class="container">
-					<div class="d-flex align-items-center justify-content-center">
-						<div class="col-12 col-md-6">
-							<h1>Subscribe To Our Newsletter Now And Get Notified On New Updates</h1>
-						</div>
-						<div class="col-12 col-md-6">
-							<form class="shadow-none bg-transparent">
-							  <div class="my-3 w-100">
-							    <input
-							      type="text"
-							      class="form-control form-control-lg "
-							      placeholder="Subscribtion email..."
-							    />
-							  </div>
-							  <div class="d-grid w-100">
-							    <button class="btn btn-primary btn-lg w-100">Subscribe Now</button>
-							  </div>
-							</form>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
-
-
 		<!-- footer -->
-		<footer class="main-footer position-relative bg-dark pt-5"> 
+		<footer class="main-footer position-relative pt-5">
+			<div class="overlay w-100 h-100 position-absolute top-0 start-0"></div>
 			<div class="container">
 				<div class="row my-4">
-
-					<div class="col-12 col-md-5">
+					<div class="col-12 col-md-5 py-3 z-3">
 						<div class="heading text-light mb-3">
 							<h4>Get Started</h4>
 						</div>
-
 						<div class="text-light opacity-50">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 						</div>
-
 					</div>
-
-					<div class="col-12 col-md-3">
+					<div class="col-12 col-md-3 py-3 z-3">
 						<div class="heading text-light mb-3">
 							<h4>Message Us</h4>
 						</div>
-
 						<form class="shadow-none bg-transparent p-0">
 						  <div class="my-3 w-100">
 						    <textarea
 						    	col="3"
-						      class="form-control form-control-lg scrollbar-none"
+						      class="form-control form-control-lg bg-transparent text-light scrollbar-none"
 						      placeholder="Your message..."
 						    ></textarea>
 						  </div>
 						  <div class="w-100">
-						    <button class="btn btn-primary btn-sm w-100">Message Now</button>
+						    <button class="btn btn-primary btn-lg w-100">Message Now</button>
 						  </div>
 						</form>
 					</div>
-
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-4 py-3 z-3">
 						<div class="heading text-light mb-3">
 							<h4>Contact Us</h4>
 						</div>
-
 						<ul class="list-unstyled text-light opacity-50">
 							<li>
 								<a href="" class="">Home</a>
@@ -637,14 +556,12 @@
 					</div>
 				</div>
 			</div>
-
-
 			<div class="w-100 py-3 border-top">
 				<div class="container">
-					<div class="d-flex align-items-center justify-content-between text-center text-center text-md-start text-light opacity-75">
+					<div class="d-md-flex align-items-center justify-content-between text-center text-center text-md-start text-light opacity-75">
 						<p class="mb-0">Copyright &copy; 2024 | <span translate="no">Young Sam Concepts</span></p>
 						<div class="">
-							<span class="nav-item animated fadeInRight">
+							<span class="nav-item animated fadeIn">
 							  <span class="fa-stack">
 							    <a href="https://wa.me//09072779389" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
 							      <i class="fas fa-circle fa-stack-2x"></i>
@@ -652,35 +569,15 @@
 							    </a>
 							  </span>
 							</span>
-
-							<span class="nav-item animated fadeInRight">
+							<span class="nav-item animated fadeIn">
 							  <span class="fa-stack">
-							    <a href="#https://www.facebook.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
+							    <a href="https://www.linkedin.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
 							      <i class="fas fa-circle fa-stack-2x"></i>
-							      <i class="fab fa-facebook-f fa-stack-1x text-dark"></i>
+							      <i class="fab fa-linkedin fa-stack-1x text-dark"></i>
 							    </a>
 							  </span>
 							</span>
-							
-							<span class="nav-item animated fadeInRight">
-							  <span class="fa-stack">
-							    <a href="#https://www.instagram.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
-							      <i class="fas fa-circle fa-stack-2x"></i>
-							      <i class="fab fa-instagram fa-stack-1x text-dark"></i>
-							    </a>
-							  </span>
-							</span>
-
-							<span class="nav-item animated fadeInRight">
-							  <span class="fa-stack">
-							    <a href="#https://www.twitter.com/YSCs" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
-							      <i class="fas fa-circle fa-stack-2x"></i>
-							      <i class="fab fa-twitter fa-stack-1x text-dark"></i>
-							    </a>
-							  </span>
-							</span>
-
-							<span class="nav-item animated fadeInRight">
+							<span class="nav-item animated fadeIn">
 							  <span class="fa-stack">
 							    <a href="#https://www.github.com/youngsamconcepts" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
 							      <i class="fas fa-circle fa-stack-2x"></i>
@@ -688,20 +585,41 @@
 							    </a>
 							  </span>
 							</span>
-
+							<span class="nav-item animated fadeIn">
+							  <span class="fa-stack">
+							    <a href="#https://www.twitter.com/YSCs" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
+							      <i class="fas fa-circle fa-stack-2x"></i>
+							      <i class="fab fa-twitter fa-stack-1x text-dark"></i>
+							    </a>
+							  </span>
+							</span>
+							<span class="nav-item animated fadeIn">
+							  <span class="fa-stack">
+							    <a href="https://www.facebook.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
+							      <i class="fas fa-circle fa-stack-2x"></i>
+							      <i class="fab fa-facebook-f fa-stack-1x text-dark"></i>
+							    </a>
+							  </span>
+							</span>
+							<span class="nav-item animated fadeIn">
+							  <span class="fa-stack">
+							    <a href="https://www.instagram.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
+							      <i class="fas fa-circle fa-stack-2x"></i>
+							      <i class="fab fa-instagram fa-stack-1x text-dark"></i>
+							    </a>
+							  </span>
+							</span>
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</footer>
-
 
 		<!-- external-link-section modal -->
 		<section id="external-link-frame" class="external-link-frame modal modal-fullscreen fade w-100 m-0 p-0">
 			<div class="modal-dialog modal-fullscreen-xxl-down modal-xxl modal-dialog-scrollable">
 				<div class="modal-content">
-					<div class="modal-header shadow-none rounded-0 w-100">					
+					<div class="modal-header shadow-none rounded-0 w-100">				
 						<h6 id="site-title" class="w-100 text-truncate pe-3 mb-0 fw-medium bg-light rounded-pill p-3 me-3"></h6>
 						<span class="go-back btn btn-close fw-bold bg-light rounded-3 p-3" data-bs-dismiss="modal"></span>
 					</div>
@@ -717,29 +635,6 @@
 				</div>
 			</div>
 		</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 		<!-- jQuery -->
 		<script src="assets/js/jquery.js"></script>
