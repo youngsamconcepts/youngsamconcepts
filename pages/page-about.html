@@ -2,31 +2,141 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="keywords" content="Web Designer, Web Developer, Web Design & Development Agency in Suleja, Mobile Phone Engineer" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="keywords" content="Front-end developer, Front-end designer, Web Designer, Web Developer, Web Design & Development Agency in Suleja" />
 		<meta name="description" content="Young Sam Concepts official website">
 		<meta name="author" content="Young Sam Concepts"> 
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="apple-mobile-web-app-title" content="invoicing online" />
-		<meta name="application-name" content="invoicing online" />
-		<meta name="msapplication-TileName" content="invoicing online" />
+		<meta name="apple-mobile-web-app-title" content="Young Sam Concepts" />
+		<meta name="application-name" content="Young Sam Concepts" />
+		<meta name="msapplication-TileName" content="Young Sam Concepts" />
 		<meta name="msapplication-TileImage" content="assets/img/favicon.png" width="20" height="20" />
 		<meta name="msapplication-TileColor" content="#0093dd" />
 		<meta name="theme-color" content="#0093dd" />
-
 		<link rel="tab icon" type="image/ico" href="assets/img/favicon.png" width="20" height="20" />
 		<link href='http://fonts.googleapis.com/css?family=Poppins:400,300,700,800' rel='stylesheet' type='text/css' />
-		<link rel="stylesheet" href="assets/css/bootstrap.css" />
-		<link rel="stylesheet" href="assets/css/font-awesome.css" />
-		<link rel="stylesheet" href="assets/css/styles.css" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,800' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="../assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="../assets/css/font-awesome.css" />
+		<link rel="stylesheet" href="../assets/css/styles.css" />
+		<link rel="stylesheet" href="../assets/lib/animate/animate.min.css" />
 		<title>Young Sam Concepts - About Us</title>
 	</head>
 	<body>
+		<!-- Start - loader -->
+		<div id="loader" class="overflow-hidden align-middle position-fixed top-0 w-100 h-100">
+			<div class="loader-container position-relative d-flex align-items-center justify-content-center flex-column vw-100 vh-100">
+				<figure class="figure d-block">
+					<img src="../assets/images/ysc-logo-transparent.png" class="figure-img w-100 h-100" />
+				</figure>
+				<div class="loader-dot d-flex align-items-center justify-content-center text-center">
+					<span class="bg-dark-subtle rounded-circle me-1"></span>
+					<span class="bg-dark-subtle rounded-circle me-1"></span>
+					<span class="bg-dark-subtle rounded-circle me-1"></span>
+					<span class="bg-dark-subtle rounded-circle me-1"></span>
+					<span class="bg-dark-subtle rounded-circle"></span>
+				</div>
+			</div>
+		</div>
+		<!-- End - loader -->
+		<!-- NAV -->
+		<nav class="navbar navbar-nav navbar-expand-lg fixed-top bg-dark text-light shadow">
+	     <div class="container">
+	       <a href="../index.html" class="navbar-brand text-primary d-flex align-items-center justify-content-start">
+	        	<div class="logo-img animated fadeIn"></div>
+	        	<h4 id="typing-text" class="mb-0 animated fadeIn" translate="no"></h4>
+	        </a>
+	        <button
+	          class="navbar-toggler"
+	          type="button"
+	          data-bs-theme="dark"
+	          data-bs-toggle="collapse"
+	          data-bs-target="#navbarNavDropdown"
+	          aria-controls="navbarNavDropdown"
+	          aria-expanded="false"
+	          aria-label="Toggle navigation"
+	        >
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	          <ul class="navbar-nav ms-auto">
+	            <li class="nav-item animated fadeIn">
+	              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+	            </li>
+	            <li class="nav-item active animated fadeIn" data-wow-delay="1s">
+	              <a class="nav-link" href="page-about.html">About Us</a>
+	            </li>
+	            <li class="nav-item animated fadeIn" data-wow-delay="2s">
+	              <a class="nav-link" href="page-services.html">Services</a>
+	            </li>
+	            <li class="nav-item dropdown animated fadeIn" data-wow-delay="3s">
+								<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+								<!-- Start - Brands dropdown-->
+								<div class="dropdown-menu text-light p-3">
+									<div class="row">
+										<ul class="list-unstyled col-md-6">
+											<li class="nav-item animated fadeIn">
+											  <a class="nav-link" href="page-portfolios.html">Portfolios</a>
+											</li>
+											<li class="nav-item animated fadeIn">
+											  <a class="nav-link" href="page-templates.html">Templates</a>
+											</li>
+										</ul>
+										<ul class="list-unstyled col-md-6">
+											<li class="nav-item animated fadeIn">
+											  <a class="nav-link" href="page-pricing.html">Pricing</a>
+											</li>
+											<li class="nav-item animated fadeIn">
+											  <a href="https://wa.me/09072779389" id="external-link" class="nav-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">Developer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+			        <li class="nav-item animated fadeIn" data-wow-delay="4s">
+			          <a class="nav-link" href="page-contact.html">Contact Us</a>
+			        </li>		       		
+		      	</ul>
+	          <span class="nav-item animated fadeIn">
+	            <span class="fa-stack">
+	              <a href="https://www.linkedin.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
+	                <i class="fas fa-circle fa-stack-2x"></i>
+	                <i class="fab fa-linkedin fa-stack-1x text-dark"></i>
+	              </a>
+	            </span>
+	          </span>
+	          <span class="nav-item animated fadeIn">
+	            <span class="fa-stack">
+	              <a href="https://www.facebook.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
+	                <i class="fas fa-circle fa-stack-2x"></i>
+	                <i class="fab fa-facebook-f fa-stack-1x text-dark"></i>
+	              </a>
+	            </span>
+	          </span>
+	          <span class="nav-item animated fadeIn">
+	            <span class="fa-stack">
+	              <a href="https://www.instagram.com/youngsamconcepts" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
+	                <i class="fas fa-circle fa-stack-2x"></i>
+	                <i class="fab fa-instagram fa-stack-1x text-dark"></i>
+	              </a>
+	            </span>
+	          </span>
+	          <span class="nav-item animated fadeIn" data-wow-delay="0.9s">
+            <span class="fa-stack">
+              <a href="https://www.twitter.com/YSCs" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x text-dark"></i>
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+    </nav>
 
-		<div class="">
+		<section class="py-5 mt-5 mb-3">
 			<div class="container">
-				<div class="">
-					<h2>About</h2>
+				<div class="py-5">
+					<h2>About Us</h2>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -35,11 +145,22 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<!-- jQuery -->
-		<script src="assets/js/jquery.js"></script>
+		<script src="../assets/js/jquery.js"></script>
 		<!-- Bootstrap.bundle.js -->
-		<script src="assets/js/bootstrap.bundle.js"></script>
+		<script src="../assets/js/bootstrap.bundle.js"></script>
+		<!-- Wow.min.js -->
+		<script src="../assets/lib/wow/wow.min.js"></script>
+		<!-- jquery.simple-text-rotator JS -->
+		<script src="../assets/js/jquery.simple-text-rotator.js"></script>
+		<!-- Custom.js -->
+		<script src="../assets/js/custom.js"></script>
+		<!-- Main JS -->
+		<script src="../assets/js/scripts.js"></script>
+		<!-- Chatbot JS ->
+		<script src="assets/js/chatbot.js"></script>-->
+		<script>eval(mod_pagespeed);</script>
 	</body>
 </html>

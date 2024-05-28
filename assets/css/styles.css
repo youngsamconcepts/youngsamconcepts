@@ -203,10 +203,10 @@ input {
 	width: 20px;
 	margin: auto;
 }
-.nav-item .nav-link {
-	color: var(--light);
+.nav-item a {
+	color: inherit !important;
 }
-.navbar-nav .nav-item.active .nav-link {
+.navbar-nav .nav-item.active a {
 	font-weight: 900;
 	color: var(--secondary-color) !important;
 }
@@ -266,7 +266,7 @@ header .overlay {
 	min-height: 200px;
 }
 .invitation-showcase .overlay,
-.newsletter .overlay {
+#page-contact .overlay {
 	background: var(--black-rgba-8);
 }
 
@@ -278,26 +278,89 @@ header .overlay {
 	position: relative;
 	min-height: 135px;
 }
-.pricing .header .overlay,
-footer.main-footer .overlay {
+.pricing .header .overlay {
 	background: var(--black-rgba-8) !important;
 	border-radius: inherit;
 }
 
 
 
-footer.main-footer {
+/*
+  START - CONTACT
+  ***************
+*/
+.page-contact {
+	min-height: 350px;
 	height: auto;
-	min-height: 300px;
-	background: url('../images/build-your-dream.jpg') no-repeat center center/cover;
 }
-footer.main-footer textarea {
+#page-contact .video-wrapper video {
+	object-fit: cover;
+}
+
+#page-contact address .fas {
+	border: 2px solid var(--light);
+	border-radius: 50%;
+	color: var(--secondary-color);
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin-right: 1rem;
+}
+
+
+
+#page-contact p a {
+	transition: var(--transition) !important;
+	color: var(--light-color) !important;
+}
+#page-contact p a:hover {
+	letter-spacing: .4px;
+}
+#page-contact p a i {
+	transition: var(--transition) !important;
+}
+#page-contact p a:hover i {
+	color: var(--secondary-color) !important;
+	border: 2px solid var(--primary-color) !important;
+	letter-spacing: 0px;
+}
+#page-contact #form {
+    position: relative;
+    width: 100%;
+}
+#page-contact #form #feedback {
+	font-size: 15px;
+	font-family: cursive;
+	margin: 1rem 0;
+	color: var(--light-color) !important;
+	transition: all .5s ease;
+}
+#page-contact form .form-group {
+	margin-bottom: 1rem;
+}
+#page-contact form .form-group .form-control {
+	border-radius: 3px;
+  transition: var(--transition) !important;
+}
+#page-contact form .form-group .form-control:focus {
+	border-color: var(--primary-color) !important;
+}
+#page-contact form .form-group .form-control.error {
+	border-color: var(--secondary-color) !important;
+}
+#page-contact form .form-group input {
+	height: 45px;
+}
+#page-contact form .form-group textarea {
 	resize: none;
-	font-size: 17px;
-	max-height: 75px !important;
+	height: 85px;
 }
-
-
+#page-contact .form-group .msg {
+	color: var(--secondary-color) !important;
+	padding: 10px 0;
+  transition: var(--transition) !important;
+}
 
 
 

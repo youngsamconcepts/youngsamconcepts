@@ -40,7 +40,7 @@
 		</div>
 		<!-- End - loader -->
 		<!-- NAV -->
-		<nav class="navbar navbar-nav navbar-expand-lg fixed-top shadow">
+		<nav id="nav-effect" class="navbar navbar-nav navbar-expand-lg fixed-top text-light shadow">
 	     <div class="container">
 	       <a href="index.html" class="navbar-brand text-primary d-flex align-items-center justify-content-start">
 	        	<div class="logo-img animated fadeIn"></div>
@@ -64,28 +64,25 @@
 	              <a class="nav-link" aria-current="page" href="index.html">Home</a>
 	            </li>
 	            <li class="nav-item animated fadeIn" data-wow-delay="1s">
-	              <a class="nav-link" href="pages/page-about.html">About Us</a>
+	              <a class="nav-link" href="#page-about">About Us</a>
 	            </li>
 	            <li class="nav-item animated fadeIn" data-wow-delay="2s">
-	              <a class="nav-link" href="pages/page-services.html">Services</a>
+	              <a class="nav-link" href="#page-services">Services</a>
 	            </li>
+							<li class="nav-item animated fadeIn">
+							  <a class="nav-link" href="#page-portfolios">Portfolios</a>
+							</li>
 	            <li class="nav-item dropdown animated fadeIn" data-wow-delay="3s">
 								<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
 								<!-- Start - Brands dropdown-->
-								<div class="dropdown-menu p-3">
+								<div class="dropdown-menu text-light p-3">
 									<div class="row">
 										<ul class="list-unstyled col-md-6">
 											<li class="nav-item animated fadeIn">
-											  <a class="nav-link" href="pages/page-portfolios.html">Portfolios</a>
-											</li>
-											<li class="nav-item animated fadeIn">
-											  <a class="nav-link" href="pages/page-templates.html">Templates</a>
+											  <a class="nav-link" href="#page-pricing">Pricing</a>
 											</li>
 										</ul>
 										<ul class="list-unstyled col-md-6">
-											<li class="nav-item animated fadeIn">
-											  <a class="nav-link" href="pages/page-pricing.html">Pricing</a>
-											</li>
 											<li class="nav-item animated fadeIn">
 											  <a href="https://wa.me/09072779389" id="external-link" class="nav-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">Developer</a>
 											</li>
@@ -94,14 +91,14 @@
 								</div>
 							</li>
 			        <li class="nav-item animated fadeIn" data-wow-delay="4s">
-			          <a class="nav-link" href="page-contact.html">Contact Us</a>
+			          <a class="nav-link" href="#page-contact">Contact Us</a>
 			        </li>		       		
 		      	</ul>
 	          <span class="nav-item animated fadeIn">
 	            <span class="fa-stack">
 	              <a href="https://www.linkedin.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
 	                <i class="fas fa-circle fa-stack-2x"></i>
-	                <i class="fab fa-linkedin fa-stack-1x text-white"></i>
+	                <i class="fab fa-linkedin fa-stack-1x text-dark"></i>
 	              </a>
 	            </span>
 	          </span>
@@ -109,7 +106,7 @@
 	            <span class="fa-stack">
 	              <a href="https://www.facebook.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
 	                <i class="fas fa-circle fa-stack-2x"></i>
-	                <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+	                <i class="fab fa-facebook-f fa-stack-1x text-dark"></i>
 	              </a>
 	            </span>
 	          </span>
@@ -117,7 +114,7 @@
 	            <span class="fa-stack">
 	              <a href="https://www.instagram.com/youngsamconcepts" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
 	                <i class="fas fa-circle fa-stack-2x"></i>
-	                <i class="fab fa-instagram fa-stack-1x text-white"></i>
+	                <i class="fab fa-instagram fa-stack-1x text-dark"></i>
 	              </a>
 	            </span>
 	          </span>
@@ -125,7 +122,7 @@
             <span class="fa-stack">
               <a href="https://www.twitter.com/YSCs" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
                 <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-twitter fa-stack-1x text-white"></i>
+                <i class="fab fa-twitter fa-stack-1x text-dark"></i>
               </a>
             </span>
           </span>
@@ -135,31 +132,37 @@
     <!-- HEADER -->
 		<header class="position-relative pb-3">
 			<figure class="figure w-100 h-100 position-absolute top-0 start-0 z-n1">
-				<img src="assets/images/web_dev.jpg" alt="" class="figure-img mb-0 w-100 h-100" />
+				<img src="assets/images/web_dev.jpg" alt="" class="figure-img mb-0 w-100 h-100 z-n1" />
 			</figure>
 			<div class="overlay w-100 h-100 position-absolute top-0 start-0 z-n1"></div>
-			<div class="container">
-				<div class="showcase pt-5 pb-3 d-md-flex align-items-center justify-content-center">
+			<div class="container z-3">
+				<div class="showcase text-center pt-5 pb-3">
 					<div class="text-light animated fadeIn">
 						<h2 class="rotate py-4">Web Development, Web Design, WEBSITE HOSTING, WEBSITE MAINTAINANCE, UI  SPECIALIST, FREELANCING</h2>
 						<p class="opacity-75 pe-3">Welcome to <span translate="no">Young Sam Concepts</span> where we build innovative, responsive and engaging web projects and cutting-edge web solutions with a solid foundation & passion in coding. Explore our portfolios, get in touch now and "Let's Build Your Dreams Together" through an online  presence! Enjoy the benefits of working with us.</p>
 					</div>
-					<figure class="figure d-none d-md-block rounded-circle shadow animated fadeIn">
-						<img src="assets/images/code.jpg" class="figure-img mb-0 w-100 h-100 rounded-circle" />
-					</figure>
 				</div>
-				<div class="my-4">
-					<div class="d-md-flex align-items-center justify-content-start">
-						<a href="pages/page-contact.html" class="btn btn-primary btn-lg m-2 my-1">Contact Now <i class="fas fa-arrow-right ms-2"></i></a>
-						<a href="pages/page-about.html" class="btn btn-dark btn-lg m-2 my-1">LEARN MORE <i class="fas fa-arrow-right ms-2"></i></a>
-					</div>
+				<div class="d-md-flex align-items-center justify-content-center my-4">
+					<a href="pages/page-contact.html" class="btn btn-primary btn-lg mx-2 my-1">Contact Now <i class="fas fa-arrow-right ms-2"></i></a>
+					<a href="#page-about" class="btn btn-default btn-lg border text-white mx-2 my-1">LEARN MORE <i class="fas fa-arrow-right ms-2"></i></a>
 				</div>
 			</div>
 		</header>
 		<!-- MAIN -->
 		<main>
+			<!-- ABOUT US -->
+			<section id="page-about" class="about py-5 position-relative">
+				<div class="container">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</section>
 			<!-- SERVICES -->
-			<section class="services py-5 position-relative">
+			<section id="page-services" class="services py-5 position-relative">
 				<div class="container">
 					<div class="row text-center mb-5">
 					  <div class="col-md-8 offset-md-2 animated fadeIn">
@@ -240,7 +243,7 @@
 				</div>
 			</section>
 			<!-- Recent Works -->
-			<section class="recent-work py-5 position-relative">
+			<section id="page-portfolios" class="recent-work py-5 position-relative">
 				<div class="container">
 					<div class="row text-center mb-5">
 					  <div class="col-md-8 offset-md-2">
@@ -353,7 +356,7 @@
 						</div>
 					</div>
 					<div class="text-center w-100">
-						<a href="pages/page-templates.html" class="btn btn-primary btn-lg my-4">View More Works <i class="fas fa-arrow-right ms-2"></i></a>
+						<a href="pages/page-portfolios.html" class="btn btn-primary btn-lg my-4">View More Works <i class="fas fa-arrow-right ms-2"></i></a>
 					</div>
 				</div>
 			</section>
@@ -407,7 +410,7 @@
 				</div>
 			</section>
 			<!-- Pricing -->
-			<section class="pricing py-5 position-relative">
+			<section id="page-pricing" class="pricing py-5 position-relative">
 				<div class="container">
 					<div class="row text-center mb-5">
 					  <div class="col-md-8 offset-md-2">
@@ -419,148 +422,147 @@
 					</div>
 					<!-- First Row -->
 					<div class="row">
-						<div class="col-12 col-md-4 my-4 position-relative overflow-hidden">
-							<div class="shadow rounded-3 bg-dark text-light pb-3">
-									<div class="header position-relative rounded-top-3 pt-5 px-3">
-										<figure class="figure w-100 h-100 position-absolute top-0 start-0 rounded-top-3">
-											<img src="assets/images/web_dev.jpg" alt="" class="figure-img mb-0 w-100 h-100 rounded-top-3" />
-										</figure>
-										<div class="overlay w-100 h-100 position-absolute top-0 start-0"></div>
-										<div class="text-light z-3 position-absolute top-0 pt-5" style="z-index: 1000 !important">
-											<h3 class="">STARTER</h3>
-											<p class="">Starts at <i class="fas fa-naira-sign"></i>100,000. Training Guide</p>
-										</div>
-									</div>
-									<div class="contents p-3">
-										<h1><i class="fas fa-naira-sign"></i>100,000</h1>
-										<p class="text-danger fw-bold fs-6">A Full Website Upto 5 Pages</p>
-										<ul class="list-unstyled pt-3 fs-6">
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 1 Year .com.ng</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Custom Emails</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 24/7 hours Premium Support</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Social Media Integration</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Logo</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Live Chat</li>
-										</ul>
+						<div class="col-12 col-md-4 py-4 position-relative">
+							<div class="shadow rounded-3 bg-white pb-3">
+								<div class="header position-relative rounded-top-3 pt-5 px-3">
+									<figure class="figure w-100 h-100 position-absolute top-0 start-0 rounded-top-3">
+										<img src="assets/images/web_dev.jpg" alt="" class="figure-img mb-0 w-100 h-100 rounded-top-3" />
+									</figure>
+									<div class="overlay w-100 h-100 position-absolute top-0 start-0"></div>
+									<div class="text-light z-3 position-absolute top-0 pt-5" style="z-index: 1000 !important">
+										<h3 class="">STARTER</h3>
+										<p class="">Starts at <i class="fas fa-naira-sign"></i>100,000. Training Guide</p>
 									</div>
 								</div>
-							</div>
-							<div class="col-12 col-md-4 my-4 position-relative overflow-hidden">
-							<div class="shadow rounded-3 bg-dark text-light pb-3">
-									<div class="header position-relative rounded-top-3 pt-5 px-3">
-										<figure class="figure w-100 h-100 position-absolute top-0 start-0 rounded-top-3">
-											<img src="assets/images/web_dev.jpg" alt="" class="figure-img mb-0 w-100 h-100 rounded-top-3" />
-										</figure>
-										<div class="overlay w-100 h-100 position-absolute top-0 start-0"></div>
-										<div class="text-light z-3 position-absolute top-0 pt-5" style="z-index: 1000 !important">
-											<h3 class="">STANDARD</h3>
-											<p class="">Starts at <i class="fas fa-naira-sign"></i>250,000. Training Guide</p>
-										</div>
-									</div>
-									<div class="contents p-3">
-										<h1><i class="fas fa-naira-sign"></i>250,000</h1>
-										<p class="text-danger fw-bold fs-6">A Full Website Pages + Additional Features</p>
-										<ul class="list-unstyled pt-3 fs-6">
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 1 Year .com</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Custom Emails</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 24/7 hours Premium Support</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Social Media Integration</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Logo</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Live Chat</li>
-										</ul>
-									</div>
+								<div class="contents p-3">
+									<h1><i class="fas fa-naira-sign"></i>100,000</h1>
+									<p class="text-danger fw-bold fs-6">A Full Website Upto 5 Pages</p>
+									<ul class="list-unstyled pt-3 fs-6">
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 1 Year .com.ng</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Custom Emails</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 24/7 hours Premium Support</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Social Media Integration</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Logo</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Live Chat</li>
+									</ul>
 								</div>
 							</div>
-							<div class="col-12 col-md-4 my-4 position-relative overflow-hidden">
-							<div class="shadow rounded-3 bg-dark text-light pb-3">
-									<div class="header position-relative rounded-top-3 pt-5 px-3">
-										<figure class="figure w-100 h-100 position-absolute top-0 start-0 rounded-top-3">
-											<img src="assets/images/web_dev.jpg" alt="" class="figure-img mb-0 w-100 h-100 rounded-top-3" />
-										</figure>
-										<div class="overlay w-100 h-100 position-absolute top-0 start-0"></div>
-										<div class="text-light z-3 position-absolute top-0 pt-5" style="z-index: 1000 !important">
-											<h3 class="">PREMIUM</h3>
-											<p class="">Starts at <i class="fas fa-naira-sign"></i>350,000. Training Guide</p>
-										</div>
+						</div>
+
+						<div class="col-12 col-md-4 py-4 position-relative">
+							<div class="shadow rounded-3 bg-white pb-3">
+								<div class="header position-relative rounded-top-3 pt-5 px-3">
+									<figure class="figure w-100 h-100 position-absolute top-0 start-0 rounded-top-3">
+										<img src="assets/images/web_dev.jpg" alt="" class="figure-img mb-0 w-100 h-100 rounded-top-3" />
+									</figure>
+									<div class="overlay w-100 h-100 position-absolute top-0 start-0"></div>
+									<div class="text-light z-3 position-absolute top-0 pt-5" style="z-index: 1000 !important">
+										<h3 class="">STANDARD</h3>
+										<p class="">Starts at <i class="fas fa-naira-sign"></i>250,000. Training Guide</p>
 									</div>
-									<div class="contents p-3">
-										<h1><i class="fas fa-naira-sign"></i>350,000</h1>
-										<p class="text-danger fw-bold fs-6">A Full Website With Unlimited Pages</p>
-										<ul class="list-unstyled pt-3 fs-6">
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 1 Year .com</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Custom Emails</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 24/7 hours Premium Support</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Social Media Integration</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Logo</li>
-											<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Live Chat</li>
-										</ul>
+								</div>
+								<div class="contents p-3">
+									<h1><i class="fas fa-naira-sign"></i>250,000</h1>
+									<p class="text-danger fw-bold fs-6">A Full Website Pages + Additional Features</p>
+									<ul class="list-unstyled pt-3 fs-6">
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 1 Year .com</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Custom Emails</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 24/7 hours Premium Support</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Social Media Integration</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Logo</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Live Chat</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 py-4 position-relative">
+							<div class="shadow rounded-3 bg-white pb-3">
+								<div class="header position-relative rounded-top-3 pt-5 px-3">
+									<figure class="figure w-100 h-100 position-absolute top-0 start-0 rounded-top-3">
+										<img src="assets/images/web_dev.jpg" alt="" class="figure-img mb-0 w-100 h-100 rounded-top-3" />
+									</figure>
+									<div class="overlay w-100 h-100 position-absolute top-0 start-0"></div>
+									<div class="text-light z-3 position-absolute top-0 pt-5" style="z-index: 1000 !important">
+										<h3 class="">PREMIUM</h3>
+										<p class="">Starts at <i class="fas fa-naira-sign"></i>350,000. Training Guide</p>
 									</div>
+								</div>
+								<div class="contents p-3">
+									<h1><i class="fas fa-naira-sign"></i>350,000</h1>
+									<p class="text-danger fw-bold fs-6">A Full Website With Unlimited Pages</p>
+									<ul class="list-unstyled pt-3 fs-6">
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 1 Year .com</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Custom Emails</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> 24/7 hours Premium Support</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Social Media Integration</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Logo</li>
+										<li class="my-3"><i class="fas fa-chevron-right me-3 fs-6"></i> Live Chat</li>
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<!-- Contact -->
+			<section id="page-contact" class="page-contact w-100 py-5 position-relative">
+				<div class="video-wrapper w-100 h-100 position-absolute top-0 start-0 z-n1">
+					<video src="assets/videos/highway-loop.mp4" autoplay loop muted class="w-100 h-100 z-n1"></video>
+					<div class="overlay w-100 h-100 position-absolute top-0 start-0 z-1"></div>
+				</div>
+				<div class="container z-3">
+					<div class="row text-center mb-5">
+					  <div class="col-md-8 offset-md-2 text-light">
+					    <h2>Contact Us</h2>
+					    <p class="lead opacity-75">
+					      Let's collaborate now to build your dreams together through an online presence
+					    </p>
+					  </div>
+					</div>
+
+					<div class="row align-items-center">
+						<div class="col-12 col-md-6 text-light">
+							<address>
+								<p>
+									<a href="sms:+2349072779389"><i class="fas fa-comment-sms"></i> +234 9072779389</a>
+								</p>
+								<p>
+									<a href="mailto:youngsamconcepts@gmail.com"><i class="fas fa-envelope"></i> youngsamconcepts@gmail.com</a>
+								</p>
+								<p>
+									<i class="fas fa-map-marker"></i> Suleja, Niger state, Nigeria
+								</p>								
+							</address>
+						</div>
+						<div class="col-12 col-md-6">
+							<form role="form" method="post" action="" id="contact-form" class="w-100 shadow-none p-0">
+								<p id="feedback"></p>
+								<div class="form-group w-100">
+									<input type="text" name="name" class="form-control bg-transparent border-2 text-white shadow-none" id="name" placeholder="Your Name">
+									<small id="name-feedback" class="msg"></small>
+								</div>
+								<div class="form-group w-100">
+									<input type="email" name="email" class="form-control bg-transparent border-2 text-white shadow-none" id="email" placeholder="Your Email">
+									<small id="email-feedback" class="msg"></small>
+								</div>
+								<div class="form-group w-100">
+									<textarea name="message" rows="5" placeholder="Your Message" class="form-control bg-transparent border-2 text-white shadow-none" id="message" spellcheck="true" lang="en" autocomplete="on"></textarea>
+									<small id="message-feedback" class="msg"></small>
+								</div>
+								<button type="submit" name="send" class="btn btn-primary btn-lg w-100 rounded-1" id="send">SEND MESSAGE</button>
+							</form>
+						</div>
+					</div>					
+				</div>
+			</section>
 		</main>
 		<!-- footer -->
-		<footer class="main-footer position-relative pt-5">
-			<div class="overlay w-100 h-100 position-absolute top-0 start-0"></div>
-			<div class="container">
-				<div class="row my-4">
-					<div class="col-12 col-md-5 py-3 z-3">
-						<div class="heading text-light mb-3">
-							<h4>Get Started</h4>
-						</div>
-						<div class="text-light opacity-50">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						</div>
-					</div>
-					<div class="col-12 col-md-3 py-3 z-3">
-						<div class="heading text-light mb-3">
-							<h4>Message Us</h4>
-						</div>
-						<form class="shadow-none bg-transparent p-0">
-						  <div class="my-3 w-100">
-						    <textarea
-						    	col="3"
-						      class="form-control form-control-lg bg-transparent text-light scrollbar-none"
-						      placeholder="Your message..."
-						    ></textarea>
-						  </div>
-						  <div class="w-100">
-						    <button class="btn btn-primary btn-lg w-100">Message Now</button>
-						  </div>
-						</form>
-					</div>
-					<div class="col-12 col-md-4 py-3 z-3">
-						<div class="heading text-light mb-3">
-							<h4>Contact Us</h4>
-						</div>
-						<ul class="list-unstyled text-light opacity-50">
-							<li>
-								<a href="" class="">Home</a>
-							</li>
-							<li>
-								<a href="" class="">About Us</a>
-							</li>
-							<li>
-								<a href="" class="">Services</a>
-							</li>
-							<li>
-								<a href="" class="">Home</a>
-							</li>
-							<li>
-								<a href="" class="">Contact Us</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+		<footer class="main-footer position-relative bg-black text-light">
 			<div class="w-100 py-3 border-top">
 				<div class="container">
-					<div class="d-md-flex align-items-center justify-content-between text-center text-center text-md-start text-light opacity-75">
-						<p class="mb-0">Copyright &copy; 2024 | <span translate="no">Young Sam Concepts</span></p>
-						<div class="">
+					<div class="d-md-flex align-items-center justify-content-between text-center text-center text-md-start opacity-75">
+						<p class="my-1">Copyright &copy; 2024 | <span translate="no">Young Sam Concepts</span></p>
+						<div class="my-1">
 							<span class="nav-item animated fadeIn">
 							  <span class="fa-stack">
 							    <a href="https://wa.me//09072779389" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
@@ -648,8 +650,8 @@
 		<script src="assets/js/custom.js"></script>
 		<!-- Main JS -->
 		<script src="assets/js/scripts.js"></script>
-		<!-- Chatbot JS ->
-		<script src="assets/js/chatbot.js"></script>-->
+		<!-- SMTP JS -->
+		<script src="assets/js/smtp.js"></script>-->
 		<script>eval(mod_pagespeed);</script>
 	</body>
 </html>
