@@ -240,7 +240,6 @@ header .overlay {
 .why-us .contents {
 	min-height: 350px;
 }
-
 .recent-work .card-header,
 .pricing .card-header {
 	min-height: 200px;
@@ -251,7 +250,6 @@ header .overlay {
 .pricing .card-header img {
 	height: 100%;
 	width: 100%;
-
 }
 .recent-work .card-content {
 	background: #fff;
@@ -261,7 +259,6 @@ header .overlay {
 	height: 20px;
 	margin: 0;
 }
-
 .invitation-showcase {
 	min-height: 200px;
 }
