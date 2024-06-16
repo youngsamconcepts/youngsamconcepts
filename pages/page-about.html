@@ -13,7 +13,7 @@
 		<meta name="msapplication-TileImage" content="assets/img/favicon.png" width="20" height="20" />
 		<meta name="msapplication-TileColor" content="#0093dd" />
 		<meta name="theme-color" content="#0093dd" />
-		<link rel="tab icon" type="image/ico" href="assets/img/favicon.png" width="20" height="20" />
+		<link rel="tab icon" type="image/ico" href="../assets/img/favicon.png" width="20" height="20" />
 		<link href='http://fonts.googleapis.com/css?family=Poppins:400,300,700,800' rel='stylesheet' type='text/css' />
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,800' rel='stylesheet' type='text/css' />
 		<link rel="stylesheet" href="../assets/css/bootstrap.css" />
@@ -40,95 +40,78 @@
 		</div>
 		<!-- End - loader -->
 		<!-- NAV -->
-		<nav class="navbar navbar-nav navbar-expand-lg fixed-top bg-dark text-light shadow">
-	     <div class="container">
-	       <a href="../index.html" class="navbar-brand text-primary d-flex align-items-center justify-content-start">
-	        	<div class="logo-img animated fadeIn"></div>
-	        	<h4 id="typing-text" class="mb-0 animated fadeIn" translate="no"></h4>
-	        </a>
-	        <button
-	          class="navbar-toggler"
-	          type="button"
-	          data-bs-theme="dark"
-	          data-bs-toggle="collapse"
-	          data-bs-target="#navbarNavDropdown"
-	          aria-controls="navbarNavDropdown"
-	          aria-expanded="false"
-	          aria-label="Toggle navigation"
-	        >
-	          <span class="navbar-toggler-icon"></span>
-	        </button>
-	        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-	          <ul class="navbar-nav ms-auto">
-	            <li class="nav-item animated fadeIn">
-	              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-	            </li>
-	            <li class="nav-item active animated fadeIn" data-wow-delay="1s">
-	              <a class="nav-link" href="page-about.html">About Us</a>
-	            </li>
-	            <li class="nav-item animated fadeIn" data-wow-delay="2s">
-	              <a class="nav-link" href="page-services.html">Services</a>
-	            </li>
-	            <li class="nav-item dropdown animated fadeIn" data-wow-delay="3s">
-								<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
-								<!-- Start - Brands dropdown-->
-								<div class="dropdown-menu text-light p-3">
-									<div class="row">
-										<ul class="list-unstyled col-md-6">
-											<li class="nav-item animated fadeIn">
-											  <a class="nav-link" href="page-portfolios.html">Portfolios</a>
-											</li>
-											<li class="nav-item animated fadeIn">
-											  <a class="nav-link" href="page-templates.html">Templates</a>
-											</li>
-										</ul>
-										<ul class="list-unstyled col-md-6">
-											<li class="nav-item animated fadeIn">
-											  <a class="nav-link" href="page-pricing.html">Pricing</a>
-											</li>
-											<li class="nav-item animated fadeIn">
-											  <a href="https://wa.me/09072779389" id="external-link" class="nav-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">Developer</a>
-											</li>
-										</ul>
-									</div>
+		<nav id="main-nav" class="navbar navbar-nav navbar-expand-lg fixed-top shadow bg-dark">
+     <div class="container">
+       <a href="index.html" class="navbar-brand text-primary d-flex align-items-center justify-content-start">
+        	<div class="logo-img animated fadeIn"></div>
+        	<h4 id="typing-text" class="mb-0 animated fadeIn" translate="no"></h4>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-theme="dark"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item animated fadeIn">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item active animated fadeIn" data-wow-delay="1s">
+              <a class="nav-link" href="page-about.html">About Us</a>
+            </li>
+            <li class="nav-item animated fadeIn" data-wow-delay="2s">
+              <a class="nav-link" href="#page-services">Services</a>
+            </li>
+						<li class="nav-item animated fadeIn">
+						  <a class="nav-link" href="#page-portfolios">Portfolios</a>
+						</li>
+            <li class="nav-item dropdown animated fadeIn" data-wow-delay="3s">
+							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
+							<!-- Start - Brands dropdown-->
+							<div class="dropdown-menu p-3">
+								<div class="row">
+									<ul class="list-unstyled col-md-6">
+										<li class="nav-item animated fadeIn">
+										  <a class="nav-link" href="#page-pricing">Pricing</a>
+										</li>
+									</ul>
+									<ul class="list-unstyled col-md-6">
+										<li class="nav-item animated fadeIn">
+										  <a href="https://wa.me/09072779389" id="external-link" class="nav-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">Developer</a>
+										</li>
+									</ul>
 								</div>
-							</li>
-			        <li class="nav-item animated fadeIn" data-wow-delay="4s">
-			          <a class="nav-link" href="page-contact.html">Contact Us</a>
-			        </li>		       		
-		      	</ul>
-	          <span class="nav-item animated fadeIn">
-	            <span class="fa-stack">
-	              <a href="https://www.linkedin.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
-	                <i class="fas fa-circle fa-stack-2x"></i>
-	                <i class="fab fa-linkedin fa-stack-1x text-dark"></i>
-	              </a>
-	            </span>
-	          </span>
-	          <span class="nav-item animated fadeIn">
-	            <span class="fa-stack">
-	              <a href="https://www.facebook.com/" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
-	                <i class="fas fa-circle fa-stack-2x"></i>
-	                <i class="fab fa-facebook-f fa-stack-1x text-dark"></i>
-	              </a>
-	            </span>
-	          </span>
-	          <span class="nav-item animated fadeIn">
-	            <span class="fa-stack">
-	              <a href="https://www.instagram.com/youngsamconcepts" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
-	                <i class="fas fa-circle fa-stack-2x"></i>
-	                <i class="fab fa-instagram fa-stack-1x text-dark"></i>
-	              </a>
-	            </span>
-	          </span>
-	          <span class="nav-item animated fadeIn" data-wow-delay="0.9s">
-            <span class="fa-stack">
-              <a href="https://www.twitter.com/YSCs" id="external-link" data-bs-toggle="modal" data-bs-target="#external-link-frame">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-twitter fa-stack-1x text-dark"></i>
-              </a>
-            </span>
-          </span>
+							</div>
+						</li>
+		        <li class="nav-item animated fadeIn" data-wow-delay="4s">
+		          <a class="nav-link" href="#page-contact">Contact Us</a>
+		        </li>		       		
+	      	</ul>
+          <a href="https://www.twitter.com/Y_S_Cs" id="external-link" class="nav-item animated fadeIn">
+					  <span class="fa-stack">							    
+				      <i class="fas fa-circle fa-stack-2x"></i>
+				      <i class="fab fa-twitter fa-stack-1x"></i>
+						</span>
+					</a>
+					<a href="https://www.facebook.com/" id="external-link" class="nav-item animated fadeIn">
+					  <span class="fa-stack">							    
+				      <i class="fas fa-circle fa-stack-2x"></i>
+				      <i class="fab fa-facebook-f fa-stack-1x"></i>
+						</span>
+					</a>
+					<a href="https://www.instagram.com/youngsamconcepts" id="external-link" class="nav-item animated fadeIn">
+					  <span class="fa-stack">							    
+				      <i class="fas fa-circle fa-stack-2x"></i>
+				      <i class="fab fa-instagram fa-stack-1x"></i>
+						</span>
+					</a>
         </div>
       </div>
     </nav>
@@ -147,6 +130,66 @@
 			</div>
 		</section>
 
+		<!-- WHY-US -->
+		<section id="why-us" class="why-us position-relative bg-light py-5">
+			<div class="container">
+				<div class="row text-center mb-5">
+				  <div class="col-md-8 offset-md-2 animated fadeIn">
+				    <h2>Why Choose Us</h2>
+				    <p class="lead opacity-75">
+				      See why you can choose Young Sam Concepts for your web development needs
+				    </p>
+				  </div>
+				</div>
+				<div class="contents row overflow-hidden">
+					<div class="col-12 col-md-4 text-center my-2">
+						<h3 class="my-3">Expert You Can Trust</h3>
+						<p>At Young Sam Concepts, we pride ourselves on our team of experienced web development experts whos posses a deep understanding of the latest technologies and trends. Our expertise ensures that your website is built to excel today's digital landscape.</p>
+					</div>
+					<div class="col-12 col-md-4 text-center my-2">
+						<h3 class="my-3">Personalized Approach</h3>
+						<p>At Young Sam Concepts, we pride ourselves on our team of experienced web development experts whos posses a deep understanding of the latest technologies and trends. Our expertise ensures that your website is built to excel today's digital landscape.</p>
+					</div>
+					<div class="col-12 col-md-4 text-center my-2">
+						<h3 class="my-3">Quality Guarantee</h3>
+						<p>At Young Sam Concepts, we pride ourselves on our team of experienced web development experts whos posses a deep understanding of the latest technologies and trends. Our expertise ensures that your website is built to excel today's digital landscape.</p>
+					</div>
+					<div class="col-12 col-md-4 text-center my-2">
+						<h3 class="my-3">Customer-centric Servicies</h3>
+						<p>At Young Sam Concepts, we pride ourselves on our team of experienced web development experts whos posses a deep understanding of the latest technologies and trends. Our expertise ensures that your website is built to excel today's digital landscape.</p>
+					</div>
+					<div class="col-12 col-md-4 text-center my-2">
+						<h3 class="my-3">Cutting-Edge Solutions</h3>
+						<p>At Young Sam Concepts, we pride ourselves on our team of experienced web development experts whos posses a deep understanding of the latest technologies and trends. Our expertise ensures that your website is built to excel today's digital landscape.</p>
+					</div>
+					<div class="col-12 col-md-4 text-center my-2">
+						<h3 class="my-3">Affordable Pricing</h3>
+						<p>At Young Sam Concepts, we pride ourselves on our team of experienced web development experts whos posses a deep understanding of the latest technologies and trends. Our expertise ensures that your website is built to excel today's digital landscape.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Iframe that opens external pages -->
+		<section id="external-link-iframe-wrapper" class="external-link-frame vw-100 vh-100 position-fixed top-0 start-0 bg-light overflow-x-hidden m-0 p-0" style="display: none; z-index: 10000;">	
+			<div class="fixed-top border-bottom rounded-0 w-100 py-2 z-1">
+				<div class="container">				
+					<div class="d-flex align-items-center justify-content-between">
+						<h6 id="site-title" class="w-100 text-truncate pe-3 mb-0 fw-medium bg-light rounded-pill me-3"></h6>
+						<span id="close-iframe" class="btn btn-close close-iframe fw-bold bg-light rounded-3"></span>
+					</div>
+				</div>
+			</div>
+			<iframe
+			src=""
+			id="external-link-iframe"
+			class="w-100 h-100 px-0 mt-4 pt-3 z-3"
+			title=""
+			frameborder="0"
+			allowfullscreen=""
+			aria-hidden="false"
+			tabindex="0"></iframe>
+		</section>
 		<!-- jQuery -->
 		<script src="../assets/js/jquery.js"></script>
 		<!-- Bootstrap.bundle.js -->
@@ -159,6 +202,7 @@
 		<script src="../assets/js/custom.js"></script>
 		<!-- Main JS -->
 		<script src="../assets/js/scripts.js"></script>
+		<script src="../assets/js/main.js"></script>
 		<!-- Chatbot JS ->
 		<script src="assets/js/chatbot.js"></script>-->
 		<script>eval(mod_pagespeed);</script>
