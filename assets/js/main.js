@@ -68,78 +68,7 @@ $(document).ready(function() {
   });
 });
 
-/*
-  CONTACT MESSAGES USING SMTP JS LIBRARY
-  **************************************
-*/
-
-const messageBody = 'Name: ' + $('#contact-name').val()
-  + '\nEmail: ' + $('#contact-email').val()
-  + '\nMessage: ' + $('#contact-name').val() // Sender message body from the form //
 
 
-function sendMSG() {
-  Email.send({
-    Host: 'smtp.gmail.com',
-    Username: 'youngsamconcepts@gmail.com', // Registered smtp username //
-    Password: '<DOCTYPE.elasticemail.youngsamconcepts>', // Registered smtp password //
-    To: 'youngsamconcepts@gmail.com',
-    From: $('#contact-email').val(), // Sender gmail from the form //
-    Subject: `A message from ${$('#contact-name').val()}`, // Default Subject //
-    Body: messageBody
-  }).then(message => message);
-  console.log(messageBody)
-}
-
-const feedbackMSG = () => {
-  const text = 'Message submitted successfully! \nWe will review your message and respond to you as soon as possible using the email you provided. Thank you!';
-  $('#feedback').text(text).fadeIn(1000);
-  $('#feedback').addClass('alert aler-success')
-  // Clear the feedback text
-  setTimeout(() => {
-    $('#feedback').fadeOut(2000);
-  }, 7000);
-}
 
 
-// Validate the contact form and send
-function validateForm() {
-  if ($('#contact-name').val() === '') {
-    $('#contact-name').addClass('error');
-    $('#name-feedback').text('Name field is empty!');
-    setTimeout(() => {
-      $('#contact-name').removeClass('error')
-      $('#name-feedback').text('');
-    }, 3000);
-  } else if ($('#contact-email').val() === '') {
-    $('#contact-email').addClass('error');
-    $('#email-feedback').text('Email field is empty!');
-    setTimeout(() => {
-      $('#contact-email').removeClass('error')
-      $('#email-feedback').text('');
-    }, 3000);
-  } else if ($('#contact-message').val() === '') {
-    $('#contact-message').addClass('error');
-    $('#message-feedback').text('Message field is empty!');
-    setTimeout(() => {
-      $('#contact-message').removeClass('error')
-      $('#message-feedback').text('');
-    }, 3000);
-  } else {
-    sendMSG();
-    feedbackMSG();
-
-    // Clear the input fields
-    setTimeout(() => {
-      $('#contact-name').val('');
-      $('#contact-email').val('');
-      $('#contact-message').val('');
-    }, 1000);
-  }
-}
-
-$('#contact-form').submit(function(e) {
-  e.preventDefault();
-
-  validateForm();
-});
