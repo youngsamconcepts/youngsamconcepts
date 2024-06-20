@@ -9,14 +9,13 @@ const message = $('#contact-message');
 function sendMSG() {
 	const messageBody = `Name: ${name.val()} \nEmail: ${email.val()} \nMessage: ${message.val()}`
 	Email.send({
-	  SecureToken: "b34fd783-3aed-44c2-90e4-c78a218c4e30",
+	  SecureToken: "fb12c9d1-fd09-4232-9df1-362e07ce7e50",
 	  To: 'youngsamconcepts@gmail.com',
-	  From: email.val(),
-	  Subject : `A message from ${name.val()}`,
+	  From: 'youngsamconcepts@gmail.com',
+	  Subject : `A new message from ${name.val()}`,
 	  Body: messageBody
 	}).then(message => {
-	  $('#feedback').html(message).fadeIn(500);
-	  $('#feedback').fadeOut(7000);
+		alert(message)
 	});
 	console.log(messageBody);
 }

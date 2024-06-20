@@ -47,12 +47,14 @@ const showIframe = function (src) {
   iframeWrapper.fadeIn(50);
   iframeTitle.text(src);
   iframe.attr('src', iframeTitle.text());
+  $('body').css({'overflow': 'hidden'});
 }
 
 // Function - Hide iframe
 const hideIframe = function () {
   const iframeWrapper = $(iframeWrapperSelector);
   iframeWrapper.fadeOut(100);
+  $('body').css({'overflow': 'auto'});
 }
 $(document).ready(function() {
   // Hide iframe by default
@@ -67,8 +69,3 @@ $(document).ready(function() {
     hideIframe();
   });
 });
-
-
-
-
-
