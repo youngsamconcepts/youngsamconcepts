@@ -15,9 +15,15 @@ function sendMSG() {
 	  Subject : `A new message from ${name.val()}`,
 	  Body: messageBody
 	}).then(message => {
-		alert(message)
+		if (message !== 'ok') {
+      const text = 'Message not sent! Something went wrong, please try again!'
+      $('#feedback').addClass('alert-warning').text(text).fadeIn(50);
+      $('#feedback').fadeOut(7000);
+    }
+    const text = 'Message successfully sent! Thanks for your message, we will review your message and get back to you as soon as possible using the email you provided'
+    $('#feedback').addClass('alert-success').text(text).fadeIn(7000);
+    $('#feedback').fadeOut(7000);
 	});
-	console.log(messageBody);
 }
 // Validate the contact form and send
 function validateForm() {
