@@ -19,11 +19,11 @@ function sendMSG() {
 		if (message !== 'ok') {
       const text = 'Message not sent! Something went wrong, please try again!'
       $('#feedback').addClass('alert-warning').text(text).fadeIn(50);
-      //$('#feedback').fadeOut(7000);
+      $('#feedback').fadeOut(7000);
     }
-    const text = 'Message successfully sent! Thanks for your message, we will review your message and get back to you as soon as possible using the email you provided'
+    const text = 'Message successfully sent! Thanks for your message, we will review your message and get back to you as soon as possible using the email you provided.'
     $('#feedback').text(text).addClass('alert-success').fadeIn(7000);
-    //$('#feedback').fadeOut(7000);
+    $('#feedback').fadeOut(7000);
 	});
 }
 // Validate the contact form and send
