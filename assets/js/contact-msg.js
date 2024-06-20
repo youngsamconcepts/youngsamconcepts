@@ -7,8 +7,8 @@ const email = $('#contact-email');
 const message = $('#contact-message');
 
 function sendMSG() {
-	const messageBody = 'Name: ' + name.val() + '<br> Email: ' + email.val() + '<br> Message: ' message.val();
-  //`Name: ${name.val()} \nEmail: ${email.val()} Message: ${message.val()}`
+	const messageBody = `Name: ${name.val()} \nEmail: ${email.val()} Message: ${message.val()}`
+  //'Name: ' + name.val() + '<br /> Email: ' + email.val() + '<br /> Message: ' message.val();
 	Email.send({
 	  SecureToken: "fb12c9d1-fd09-4232-9df1-362e07ce7e50",
 	  To: 'youngsamconcepts@gmail.com',
