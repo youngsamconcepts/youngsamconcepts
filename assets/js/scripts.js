@@ -15,7 +15,7 @@ function typeText(text, typingElement, delay) {
 */
 function logoTypingEffect() {
   const text = 'Young Sam Concepts';
-  const typingElement = document.getElementById('typing-text');
+  const typingElement = document.getElementById('logo-text');
 
   typeText(text, typingElement, 150);
 }
