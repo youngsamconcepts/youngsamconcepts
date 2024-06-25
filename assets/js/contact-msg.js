@@ -15,13 +15,13 @@ function sendMSG() {
 	  Subject : `A new message from ${name.val()}`,
 	  Body: messageBody
 	}).then(message => {
-		if (message === 'ok') {
-      const text = 'Message successfully sent! Thanks for your message, we will review your message and get back to you as soon as possible using the email you provided.'
-      $('#feedback').text(text).addClass('alert-success').fadeIn('slow');
+		if (message !== 'OK') {
+      const text = 'Message not sent! Something went wrong, please try again!'
+      $('#feedback').addClass('alert-warning').text(text).fadeIn('slow');
       $('#feedback').fadeOut(5000);
     }
-    const text = 'Message not sent! Something went wrong, please try again!'
-    $('#feedback').addClass('alert-warning').text(text).fadeIn('slow');
+    const text = 'Message successfully sent! Thanks for your message, we will review your message and get back to you as soon as possible using the email you provided.'
+    $('#feedback').text(text).addClass('alert-success').fadeIn('slow');
     $('#feedback').fadeOut(5000);
 	});
 }
