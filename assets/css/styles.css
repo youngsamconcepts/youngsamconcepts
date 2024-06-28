@@ -111,7 +111,7 @@ input {
 .btn-default {
 	color: inherit !important;
 }
-.btn-primary {
+.btn-primary, {
 	background: var(--primary-color) !important;
 	border-color: var(--primary-color) !important;
 }
@@ -119,7 +119,12 @@ input {
 	background: var(--secondary-color) !important;
 	border-color: var(--secondary-color) !important;
 }
-
+.btn.filter-btn.active {
+	background: var(--primary-color) !important;
+	color: var(--light) !important;
+	border-color: var(--primary-color) !important;
+	transition: var(--transition);
+}
 
 /* loader */
 #loader {

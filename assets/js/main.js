@@ -2,6 +2,7 @@
   NAVBAR BACKGROUND EFFECT
   ************************
 */
+/*
 const headerEffect = function () {
   if (window.scrollY > $('#main-header').outerHeight()) {
     $('#main-nav').addClass('bg-light');
@@ -13,7 +14,7 @@ const headerEffect = function () {
 }
 //$(document).ready(headerEffect);
 //$(window).scroll(headerEffect);
-
+*/
 /*
   BACK TO TOP
   ***********
@@ -60,12 +61,38 @@ $(document).ready(function() {
   // Hide iframe by default
   hideIframe();
   $('a').click(function(e) {
-    if (this.id === 'external-link') {
+    if (e.target.id === 'external-link') {
       e.preventDefault();
-      showIframe(this.href);
+      showIframe(e.target.href);
     }
   });
   $('#' + closeIframeSelector).click(function(e) {
     hideIframe();
   });
 });
+
+
+// Helper Function - Filter Items //
+function filterItems(btn, itemElement) {
+  $(btn).click(function(e) {
+    const currentBtn = e.target;
+    const filter = currentBtn.dataset.filter;
+    $(currentBtn).addClass('active');
+    $(currentBtn).siblings().removeClass('active');
+    for (let i = 0; i < itemElement.length; i++) {
+      if (filter === 'all') {
+        items[i].style.display = 'block';
+      } else if(itemElement[i].classList.contains(filter)) {
+        itemElement[i].style.display = 'block';
+      } else {
+        itemElement[i].style.display = 'none';
+        $('#port-unavailable').removeClass('d-none')
+      }
+    }
+  });
+}
+
+// FILTER THE PORTFOLIOS //
+const items = $('.work');
+filterBtn = $('.port-filter-btn');
+filterItems(filterBtn, items);
