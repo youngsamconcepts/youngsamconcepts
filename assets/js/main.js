@@ -81,7 +81,7 @@ function filterItems(btn, itemElement) {
     $(currentBtn).siblings().removeClass('active');
     for (let i = 0; i < itemElement.length; i++) {
       if (filter === 'all') {
-        items[i].style.display = 'block';
+        itemElement[i].style.display = 'block';
       } else if(itemElement[i].classList.contains(filter)) {
         itemElement[i].style.display = 'block';
       } else {
@@ -91,8 +91,23 @@ function filterItems(btn, itemElement) {
     }
   });
 }
+/*
+$(document).ready(function() {
+  $('#page-load-alert').addClass('d-block');
+});
+*/
+document.addEventListener('DOMContentLoaded', (e) => {
+  document.querySelector('#page-load-alert').classList.remove('d-none')
+});
 
-// FILTER THE PORTFOLIOS //
-const items = $('.work');
-filterBtn = $('.port-filter-btn');
-filterItems(filterBtn, items);
+$(document).ready(function() {
+  // FILTER THE PORTFOLIOS //
+  const works = $('.work');
+  filterBtn = $('.port-filter-btn');
+  filterItems(filterBtn, works);
+
+  // FILTER THE PRICING //
+  const prices = $('.price');
+  filterBtn = $('.pricing-filter-btn');
+  filterItems(filterBtn, prices);
+});
