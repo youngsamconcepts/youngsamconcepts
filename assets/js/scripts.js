@@ -20,3 +20,16 @@ function logoTypingEffect() {
   typeText(text, typingElement, 150);
 }
 document.addEventListener('DOMContentLoaded', logoTypingEffect);
+
+// Warning Text - The warning text on page load
+document.addEventListener('DOMContentLoaded', (e) => {
+  const pageLoadAlert = document.querySelector('#page-load-alert');
+  const stopDisplayingCheckbox = document.querySelector('#display-not');
+
+  pageLoadAlert.classList.remove('d-none');
+
+  if (stopDisplayingCheckbox.checked) {
+    console.log('Input Checked')
+  }
+
+});
