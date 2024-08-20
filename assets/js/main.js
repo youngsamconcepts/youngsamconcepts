@@ -91,13 +91,8 @@ function filterItems(btn, itemElement) {
     }
   });
 }
-/*
 $(document).ready(function() {
   $('#page-load-alert').addClass('d-block');
-});
-*/
-document.addEventListener('DOMContentLoaded', (e) => {
-  document.querySelector('#page-load-alert').classList.remove('d-none')
 });
 
 $(document).ready(function() {

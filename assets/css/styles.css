@@ -200,24 +200,8 @@ input {
 	height: 50px;
 	background: url('../images/ysc-logo-transparent.png') no-repeat center center/cover !important;
 }
-.navbar-nav .nav-item {
-	position: relative;
-}
-.navbar-nav .nav-item::after {
-	content: '';
-	position: absolute;
-	left: .5rem;
-	bottom: 0;
-	width: 0;
-	height: 1px;
-	padding: 1px 0;
-	background: var(--secondary-color);
-	transition: var(--transition);
-}
-.navbar-nav .nav-item:hover::after,
-.navbar-nav .nav-item.active::after {
-	width: 20px;
-	margin: auto;
+.navbar-nav .nav-item:hover {
+	color: var(--secondary-color) !important;
 }
 .nav-item a {
 	color: inherit !important;
